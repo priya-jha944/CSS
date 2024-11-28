@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+           
+         }
+         #boxleft{
+            background: green;
+            border: 1px solid yellowgreen;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+              width: 47%;
+            
+
+         }
+         #boxright{
+            background: blueviolet;
+            border: 1px solid orange;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            width: 47%;
+         }
+         p{
+            border: 1px solid red;
+         }
+         img{
+            width: 170px;
+         }
+         @media (max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxleft">
+            <p>Text1</p>
+            <p>Text2</p>
+
+        </div>
+        <div class="boxright">
+            <img src="download (1).jpg" alt="picture" height="200px" width="200px">
+        </div>
+    </div>
+</body>
+</html>
